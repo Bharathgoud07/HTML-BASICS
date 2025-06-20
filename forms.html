@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+<link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h1>User personal information</h1>
+            <label for="name">Enter full name</label>
+            <input type="text" id="name" required/>
+            <br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" required/>
+            <br>
+            <label type="password">enter your password</label>
+            <input type="password" id="password" required/>
+            <br>
+            <label type="confirmpassword">confirm your password</label>
+            <input type="confirmpassword" id="password" placeholder="cofirm password"/>
+            <br>
+            <div class="gender-group">
+                <label for="gender">select your gender</label><br>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">male</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">female</label>
+                <input type="radio" name="gender" value="others" id="others">
+                <label for="others">others</label>
+                <br>
+                <label for="country">select your country</label>
+                <select id="country" required>
+                    <option value="" disabled selected>select your country</option>
+                    <option value="india">india</option>
+                    <option value="usa">usa</option>
+                    <option value="pakistan">pakistan</option>
+                    <option value="canada">canada</option>
+                    <br>
+                    <br>
+
+            </div>
+            <br>
+            <label for="DOB">date of birth</label>
+            <input type="date" id="DOB" required />
+            <br><br>
+            <label for="address">enter your address</label><br>
+            <textarea id="address" name="address" reqiured ></textarea>
+            <br>
+            <button>submit</button>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
